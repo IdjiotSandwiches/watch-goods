@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1366">
+    <meta name="viewport" content="width=800">
+    <meta name="viewport" content="width=450">
+
+    <title>WatcHGoods</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../img/icon.png">
+</head>
+
+<body>
+    <!-- NavBar Start -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <div class="navbar-extra">
+                <button id="hamburger-menu"><i data-feather="menu"></i></button>
+            </div>
+        </div>
+        
+        <a href="../index/index.html" class="navbar-logo">Watc<span>H</span>Goods</a>
+
+        <div class="navbar-nav">
+            <a href="../index/index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="../aboutus/aboutus.html">About Us</a>
+            <a href="../locations/locations.html">Locations</a>
+            <a href="../contactus/contactus.html">Contact Us</a>
+        </div>
+        
+        <div class="navbar-right">
+            <div class="navbar-extra">
+                <button id="search"><i data-feather="search"></i></button>
+            </div>
+        </div>
+    </nav>
+    <!-- NavBar End -->
+
+    <!-- Products Start -->
+    <section class="section-product">
+        <div class="content">
+            <div class="filter-product">
+                <!-- Untuk filter produk -->
+                <div class="filter-desc">
+                    <h4>Filter</h4>
+                </div>
+                <div class="container">
+                    <div class="checkbox">
+                        <input type="radio" id="radio1" class="radioChecked" value="rolex" onclick="handleRadioChange(1)">
+                        <label for="radio1">Rolex</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="radio" id="radio2" class="radioChecked" value="hublot" onclick="handleRadioChange(2)">
+                        <label for="radio2">Hublot</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="radio" id="radio3" class="radioChecked" value="tommy" onclick="handleRadioChange(3)">
+                        <label for="radio3">Tommy Hilfiger</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="radio" id="radio4" class="radioChecked" value="seiko" onclick="handleRadioChange(4)">
+                        <label for="radio4">Seiko</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="radio" id="radio5" class="radioChecked" value="fossil" onclick="handleRadioChange(5)">
+                        <label for="radio5">Fossil</label>
+                    </div>
+                    <div class="resetBtn">
+                        <button class="reset">Reset</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Untuk responsif, jadi pas layar dikecilkan maka filter akan hanya menjadi sebuah button -->
+            <div class="filter-button">
+                <img src="../../img/filter.png" alt="filter" id="filter-button">
+            </div>
+
+            <div class="brand-product">
+                <!-- Jika filter ditekan maka akan disesuaikan nama brand dengan produknya -->
+                <h1 id="all-product">All Product</h1>
+                <h1 id="rolex-filter">Rolex</h1>
+                <h1 id="hublot-filter">Hublot</h1>
+                <h1 id="tommy-filter">Tommy Hilfiger</h1>
+                <h1 id="seiko-filter">Seiko</h1>
+                <h1 id="fossil-filter">Fossil</h1>
+
+                <!-- List produk -->
+                <div class="product-container">
+                    <a href="../product-list/rolex-yacht/yacht.html" class="rolex">
+                        <div class="product">
+                            <div class="wrap">
+                                <div class="img">
+                                    <img src="../../img/products/rolex.png" alt="yacht-master 42">
+                                </div>
+                                <h4>Yacht-Master 42</h4>
+                                <p>IDR 212.309.500</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../product-list/hublot-fusion/fusion.html" class="hublot">
+                        <div class="product">
+                            <div class="wrap">
+                                <div class="img">
+                                    <img src="../../img/products/hublot.png" alt="classic-fussion-42-chronograph-ceramic-king-gold">
+                                </div>
+                                <h4>Classic Fusion 42 - Chronograph Ceramic King Gold</h4>
+                                <p>IDR 175.000.000</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../product-list/tommy-subdials/subdials.html" class="tommy-hilfiger">
+                        <div class="product">
+                            <div class="wrap">
+                                <div class="img">
+                                    <img src="../../img/products/tommyhilfiger.png" alt="sub-dials-sport-watch-with-gun-metal-bracelet">
+                                </div>
+                                <h4>Sub-Dials Sport Watch with Gun Metal Bracelet</h4>
+                                <p>IDR 3.345.502</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../product-list/seiko-king/king.html" class="seiko">
+                        <div class="product">
+                            <div class="wrap">
+                                <div class="img">
+                                    <img src="../../img/products/seiko.png" alt="king-seiko-spb369">
+                                </div>
+                                <h4>King Seiko SPB369</h4>
+                                <p>IDR 27.677.099</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../product-list/fossil-everett/everett.html" class="fossil">
+                        <div class="product">
+                            <div class="wrap">
+                                <div class="img">
+                                    <img src="../../img/products/fossil.png" alt="everett-three-hand-date-white-ceramic-watch">
+                                </div>
+                                <h4>Everett Three-Hand Date White Ceramic Watch</h4>
+                                <p>IDR 5.725.000</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Products End -->
+
+    <!-- Footer Section Start -->
+    <footer>
+        <main class="content">
+            <div class="row">
+                <div class="pages">
+                    <h4>EXPLORE</h4>
+                    <a href="../index/index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="../aboutus/aboutus.html">About Us</a>
+                    <a href="../locations/locations.html">Locations</a>
+                    <a href="../contactus/contactus.html">Contact Us</a>
+                </div>
+                <div class="socialmeds">
+                    <h4>Follow Us</h4>
+                    <div class="social">
+                        <a href="#instagram"><i data-feather="instagram"></i></a>
+                        <a href="#facebook"><i data-feather="facebook"></i></a>
+                        <a href="#twitter"><i data-feather="twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="creator">
+                <p>&copy; Created by Vin</p>
+            </div>
+        </main>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Icon -->
+    <script>
+        feather.replace()
+    </script>
+
+    <!-- JavaScript -->
+    <script src="products.js"></script>
+    <script src="../navbar/navbar.js"></script>
+</body>

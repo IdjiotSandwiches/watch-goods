@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1366">
+    <meta name="viewport" content="width=800">
+    <meta name="viewport" content="width=450">
+    
+    <title>WatcHGoods</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../img/icon.png">
+</head>
+
+<body>
+    <!-- NavBar start -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <div class="navbar-extra">
+                <button id="hamburger-menu"><i data-feather="menu"></i></button>
+            </div>
+        </div>
+        
+        <a href="index.html" class="navbar-logo">Watc<span>H</span>Goods</a>
+
+        <div class="navbar-nav">
+            <a href="index.html">Home</a>
+            <a href="../products/products.html">Products</a>
+            <a href="../aboutus/aboutus.html">About Us</a>
+            <a href="../locations/locations.html">Locations</a>
+            <a href="../contactus/contactus.html">Contact Us</a>
+        </div>
+        
+        <div class="navbar-right">
+            <div class="navbar-extra">
+                <button id="search"><i data-feather="search"></i></button>
+            </div>
+        </div>
+    </nav>
+    <!-- NavBar end -->
+
+    
+    <!-- Banner Section Start -->
+    <section aria-label="newBanner">
+        <!-- Arrow Down, kalau dipencet nanti ke section bawahnya yang "Brand Section" -->
+        <button class="btn-down" id="arrow-down-index"><img src="../../img/arrow-down.png" alt="arrow-down"></button>
+        <!-- Carousel untuk promotional -->
+        <div class="carousel">
+            <button class="btn" id="prev">&#8656;</button>
+            <button class="btn" id="next">&#8658;</button>
+            <div class="container">
+                <div class="slide">
+                    <img src="../../img/banner/banner1redesign.jpg" alt="Banner1">
+                </div>
+                <div class="slide">
+                    <img src="../../img/banner/banner2redesign.jpg" alt="Banner2">               
+                </div>
+                <div class="slide" id="active">
+                    <img src="../../img/banner/banner3redesign.jpg" alt="Banner3">                
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner Section End -->
+
+    <!-- Brand Section Start -->
+    <section class="brand">
+        <main class="content">
+            <h4>OUR EXCLUSIVE BRAND</h4>
+            <!-- List Brand -->
+            <div class="row">
+                <a href="../brand-pages/rolex-page/rolex.html">
+                    <img src="../../img/brand/rolex.png" alt="Rolex">
+                </a>
+                <a href="../brand-pages/hublot-page/hublot.html">
+                    <img src="../../img/brand/hublot.png" alt="Hublot">
+                </a>
+                <a href="../brand-pages/tommy-page/tommy.html">
+                    <img src="../../img/brand/tommyhilfiger.png" alt="Tommy Hilfiger" id="tommy">
+                </a>
+                <a href="../brand-pages/seiko-page/seiko.html">
+                    <img src="../../img/brand/seiko.png" alt="Seiko">
+                </a>
+                <a href="../brand-pages/fossil-page/fossil.html">
+                    <img src="../../img/brand/fossil.png" alt="Fossil">
+                </a>
+            </div>
+        </main>
+    </section>
+    <!-- Brand Section End -->
+
+    <!-- Service Section Start -->
+    <section class="service">
+        <main class="content">
+            <div class="about">
+                <a href="../aboutus/aboutus.html">
+                    <h4>ABOUT US</h4>
+                    <img src="../../img/index-service/aboutus.jpg" alt="aboutus">
+                </a>
+            </div>
+            <div class="contact">
+                <a href="../contactus/contactus.html">
+                    <h4>CONTACT US</h4>
+                    <img src="../../img/index-service/contactus.jpg" alt="contactus">
+                </a>
+            </div>
+        </main>
+    </section>
+    <!-- Service Section End -->
+
+    <!-- Footer Section Start -->
+    <footer>
+        <main class="content">
+            <div class="row">
+                <div class="pages">
+                    <h4>EXPLORE</h4>
+                    <a href="index.html">Home</a>
+                    <a href="../products/products.html">Products</a>
+                    <a href="../aboutus/aboutus.html">About Us</a>
+                    <a href="../locations/locations.html">Locations</a>
+                    <a href="../contactus/contactus.html">Contact Us</a>
+                </div>
+                <div class="socialmeds">
+                    <h4>Follow Us</h4>
+                    <div class="social">
+                        <a href="#instagram"><i data-feather="instagram"></i></a>
+                        <a href="#facebook"><i data-feather="facebook"></i></a>
+                        <a href="#twitter"><i data-feather="twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="creator">
+                <p>&copy; Created by Vin</p>
+            </div>
+        </main>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Icon -->
+    <script>
+        feather.replace()
+    </script>
+
+    <!-- JavaScript -->
+    <script src="index.js"></script>
+    <script src="../navbar/navbar.js"></script>
+</body>
+</html>

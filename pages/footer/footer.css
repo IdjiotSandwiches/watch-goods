@@ -1,0 +1,123 @@
+:root {
+    --primary: #ff2c2c;
+    --secondary: #010101;
+    --bg: #fff;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--bg);
+    color: var(--secondary);
+}
+
+/* Footer Section */
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondary);
+    padding: 2rem 7%;
+    min-height: 55vh;
+    align-items: center;
+    color: var(--bg);
+    border-top-style: solid;
+    border-top-color: var(--bg);
+    border-width: 2px;
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .pages {
+    color: var(--bg);
+    padding: 0 1.5rem;
+    font-size: 1.25rem;
+    text-align: right;
+}
+
+footer .pages h4 {
+    padding-bottom: 1rem;
+    letter-spacing: 1.5px;
+}
+
+footer .pages a {
+    color: var(--bg);
+    display: block;
+    padding: 0.5rem 0;
+}
+
+footer .pages a:hover {
+    color: var(--primary);
+}
+
+footer .creator {
+    padding-top: 3rem;
+}
+
+footer .creator p {
+    text-align: center;
+}
+
+footer .socialmeds {
+    padding: 0 1rem;
+}
+
+footer .socialmeds h4 {
+    font-size: 1.1rem;
+    padding-bottom: 1.5rem;
+}
+
+footer .social a {
+    padding-right: 0.5rem;
+    color: var(--bg);
+}
+
+footer .social a:hover {
+    color: var(--primary);
+}
+
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 80%; 
+    }
+
+    footer .pages {
+        min-width: 9.5rem;
+    }
+}
+
+/* Tablet */
+@media (max-width: 800px) {
+    /* Footer */
+    footer {
+        min-height: 40vh;
+    }
+
+    footer .pages {
+        width: 10.5rem;
+    }
+
+    footer .social a {
+        padding-right: 0.1rem;
+    }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+    html {
+        font-size: 60%;
+    }
+}

@@ -1,0 +1,296 @@
+:root {
+    --primary: #ff2c2c;
+    --secondary: rgb(20, 20, 20);
+    --bg: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--bg);
+    color: var(--secondary);
+}
+
+/* About Us */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(20, 20, 20);
+}
+
+.about .content {
+    padding: 0 7%;
+    opacity: 0;
+    animation: slideIn 2.5s forwards;
+    transform: translateY(-5%);
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.about .content h1 {
+    color: var(--bg);
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 4em;
+    font-weight: 600;
+}
+
+.about .content p {
+    color: var(--bg);
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+}
+
+.about .content span {
+    color: var(--primary);
+}
+
+.btn-down {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    cursor: pointer;
+    top: 80%;
+}
+
+.btn-down img {
+    width: 10%;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-image: url(../../img/bg/banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+}
+
+.hero .content h1 {
+    padding-top: 8rem;
+    font-size: 5em;
+    color: #ffffff;
+    font-weight: 600;
+    text-shadow: rgb(1, 1, 1, 0.8);
+}
+
+.hero .content h1 span {
+    color: #ff2c2c;
+}
+
+.hero .content p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    mix-blend-mode: difference;
+}
+
+.hero .content p span {
+    color: #ff2c2c;
+}
+
+.hero .content .cta {
+    font-weight: 600;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    font-size: 1.5rem;
+    color: var(--secondary);
+    background-color: #fff;
+    box-shadow: 1px 1px 3px rgba(1,1,1,0.8);
+    transition: transform 0.2s, color 0.2s;
+}
+
+.hero .content a:hover {
+    color: var(--primary);
+}
+
+/* Quality Section */
+.quality {
+    min-height: 100vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-image: url(../../img/bg/quality-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.quality .content {
+    padding: 5rem 7%;
+    max-width: 60rem;
+}
+
+.quality .content h1 {
+    text-align: center;
+    font-size: 5em;
+    font-weight: 600;
+    color: var(--secondary);
+    text-shadow: rgb(1, 1, 1, 0.8);
+}
+
+.quality .content h1 span {
+    color: #ff2c2c;
+}
+
+.quality .content p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #242323;
+}
+
+/* Services section */
+.services {
+    min-height: 100vh;
+    display: flex;
+    align-items: end;
+    background-image: url(../../img/bg/services-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: right;
+}
+
+.services .content {
+    padding: 5rem 7%;
+    max-width: 50rem;
+}
+
+.services .content h1 {
+    font-size: 5em;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: rgb(1, 1, 1, 0.8);
+    text-align: left;
+}
+
+.services .content h1 span {
+    color: #ff2c2c;
+}
+
+.services .content p {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.services .content .cta {
+    font-weight: 600;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    font-size: 1.5rem;
+    color: var(--secondary);
+    background-color: #fff;
+    box-shadow: 1px 1px 3px rgba(1,1,1,0.8);
+    transition: transform 0.2s, color 0.2s;
+}
+
+.services .content a:hover {
+    color: var(--primary);
+}
+
+/* Authentic Section */
+.authentic {
+    min-height: 100vh;
+    display: flex;
+    align-items: end;
+    background-image: url(../../img/bg/authentic-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: start;
+}
+
+.authentic .content {
+    padding: 1.4rem 7%;
+    max-width: 45rem;
+}
+
+.authentic .content h1 {
+    padding-bottom: 4%;
+    color: #ffffff;
+    font-size: 5em;
+    font-weight: 600;
+    text-align: right;
+    line-height: 4.2rem;
+}
+.authentic .content h1 span {
+    color: #ff2c2c;
+}
+
+.authentic .content p {
+    padding-bottom: 35%;
+    text-align: right;
+    color: #ffffff;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+}
+
+.authentic .content p span {
+    color: #ff2c2c;
+    font-weight: 700;
+}
+
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 80%; 
+    }
+}
+
+/* Tablet */
+@media (max-width: 800px) {
+    html {
+        font-size: 65%;
+    }
+
+    .about {
+        padding: 5% 0;
+    }
+
+    .btn-down {
+        transform: translateY(10%);
+    }
+
+    .btn-down img {
+        width: 20%;
+    }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+    html {
+        font-size: 60%;
+    }
+}
+
