@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1366">
+    <meta name="viewport" content="width=800">
+    <meta name="viewport" content="width=450">
+    <title>WatcHGoods</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="contactus.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../img/icon.png">
+</head>
+
+<body>
+    <!-- NavBar start -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <div class="navbar-extra">
+                <button id="hamburger-menu"><i data-feather="menu"></i></button>
+            </div>
+        </div>
+        
+        <a href="../index.html" class="navbar-logo">Watc<span>H</span>Goods</a>
+
+        <div class="navbar-nav">
+            <a href="../index.html">Home</a>
+            <a href="../products/products.html">Products</a>
+            <a href="../aboutus/aboutus.html">About Us</a>
+            <a href="../locations/locations.html">Locations</a>
+            <a href="contactus.html">Contact Us</a>
+        </div>
+        
+        <div class="navbar-right">
+            <div class="navbar-extra">
+                <button id="search"><i data-feather="search"></i></button>
+            </div>
+        </div>
+    </nav>
+    <!-- NavBar end -->
+
+    <!-- Contact Section Start -->
+    <div class="background">
+        <div class="overlay">
+            <h3>SUBMIT SUCCESS</h3>
+            <p>Click the button to close</p>
+            <div class="submit-ok">
+                <button class="ok">OK</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="header">
+        <h1>CONTACT US</h1>
+    </div>
+    
+    <div class="desc" id="desc-first">
+        <h2>OFFLINE SERVICES</h2>
+        <p>You may visits one of our offline store in the link below</p>
+        <a href="../locations/locations.html" class="location-button">
+            <button class="btn">FIND A STORE</button>
+        </a>
+    </div>
+
+    <div class="desc" id="desc-second">
+        <h2>CONTACT US FORM</h2>
+        <p>Please fill the form below if you have any problem 
+            with our product</p>
+    </div>
+
+    <section class="contact">
+        <div class="form">
+            <form id="my-form">
+                <div class="left">
+                    <div class="input">
+                        <label for="userfullname">Fullname:</label>
+                        <div class="msgName" id="decline">*Please fill your name</div>
+                        <input type="text" id="userfullname">
+                    </div>
+                    <div class="input">
+                        <label for="usercountry">Country/Region:</label>
+                        <div class="msgCountry" id="decline">*Please select a country</div>
+                        <select name="country" id="usercountry">
+                            <option value="" selected disabled>--</option>
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="United States">United States</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="China">China</option>
+                            <option value="Japan">Japan</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <label for="useremail">Email:</label>
+                        <div class="msgEmail" id="decline">*Please enter a valid e-mail</div>
+                        <input type="email" id="useremail" placeholder="...@example.com">
+                    </div>  
+                </div>
+                <div class="right">
+                    <div class="input">
+                        <label for="usermessage">Enter your messages:</label>
+                        <div class="msgMessagesBlank" id="decline">*Please enter your messages</div>
+                        <div class="msgMessagesSize" id="decline">*0-300 Characters Only</div>
+                        <textarea name="messages" id="usermessage" cols="60" rows="10"></textarea>
+                    </div>
+                    <div class="receipt">
+                        <div class="accept" id="decline">*You must agree to terms & agreement</div>
+                        <div class="wrap">
+                            <input type="checkbox" id="sendreceipt">
+                            <label for="sendreceipt">I acknowledge and agree to terms & agreement
+                                and receive a receipt
+                            </label>
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <button class="btn" id="btn">SUBMIT</button>
+                    </div>
+                </div>
+           </form>
+        </div>
+    </section>
+
+    
+
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+    <footer>
+        <main class="content">
+            <div class="row">
+                <div class="pages">
+                    <h4>EXPLORE</h4>
+                    <a href="../index.html">Home</a>
+                    <a href="../products/products.html">Products</a>
+                    <a href="../aboutus/aboutus.html">About Us</a>
+                    <a href="../locations/locations.html">Locations</a>
+                    <a href="contactus.html">Contact Us</a>
+                </div>
+                <div class="socialmeds">
+                    <h4>Follow Us</h4>
+                    <div class="social">
+                        <a href="#instagram"><i data-feather="instagram"></i></a>
+                        <a href="#facebook"><i data-feather="facebook"></i></a>
+                        <a href="#twitter"><i data-feather="twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="creator">
+                <p>&copy; Created by Vin</p>
+            </div>
+        </main>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Icon -->
+    <script>
+        feather.replace()
+    </script>
+
+    <!-- JavaScript -->
+    <script src="../navbar/navbar.js"></script>
+    <script src="contactus.js"></script>
+</body>

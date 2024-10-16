@@ -1,0 +1,260 @@
+:root {
+    --primary: #ff2c2c;
+    --secondary: rgb(20, 20, 20);
+    --bg: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--bg);
+    color: var(--secondary);
+}
+
+.header {
+    display: flex;
+    background-image: url(../../img/bg/locations-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 20vh;
+    background-position: 50%;
+    justify-content: center;
+    color: var(--bg);
+    position: relative;
+    align-items: center;
+    box-shadow: 0 0 20px 5px rgba(0,0,0,0.6);
+}
+
+.header::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header h1 {
+    font-size: 3.5em;
+    z-index: 1;
+    letter-spacing: 0.5rem;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 7%;
+    text-align: center;
+}
+
+#desc-second {
+    margin: 10% 7% 1% 7%;
+}
+
+.desc h2 {
+    font-size: 2rem;
+    letter-spacing: 0.15rem;
+}
+
+.desc p {
+    font-size: 1.5rem;
+    padding: 2% 0;
+}
+
+.desc .location-button {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    margin: 0 7%;
+}
+
+.contact #my-form {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact .left, 
+.contact .right {
+    width: 45%;
+}
+
+.contact .input,  
+.contact #btn {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0;
+}
+
+.contact .receipt {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.contact #sendreceipt {
+    margin-right: 2%;
+}
+
+.contact form select {
+    border-style: solid;
+    border-color: var(--bg);
+}
+
+.contact form #userfullname, 
+.contact form #usercountry,
+.contact form #useremail {
+    width: 100%;
+    border-bottom-style: solid;
+    border-block-end-color: var(--primary);
+    border-width: 2px;
+    color: var(--secondary);
+    border-width: 2px;
+    padding: 2% 1%;
+}
+
+.contact form textarea {
+    width: 100%;
+    border-style: solid;
+    border-color: var(--primary);
+    border-width: 2px;
+    resize: none;
+    margin: 2% 0;
+    padding: 1%;
+}
+
+.contact #decline {
+    display: none;
+    color: var(--primary);
+}
+
+.btn {
+    padding: 10% 7%;
+    background-color: var(--primary);
+    color: var(--bg);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.contact .btn {
+    padding: 3% 7%;
+}
+
+.btn:hover {
+    background-color: var(--bg);
+    color: var(--primary);
+    transition: 0.3s;
+}
+
+.background {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.background .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--bg);
+    text-align: center;
+    padding: 3% 7%;
+    border-style: solid;
+    border-color: var(--primary);
+    border-width: 2px;
+}
+
+.background h3 {
+    font-size: 1.5rem;
+    padding: 5% 0;
+}
+
+.background p {
+    font-size: 1rem;
+    padding: 0 0 10%;
+}
+
+.background .ok {
+    font-size: 1rem;
+    padding: 3% 15%;
+    color: var(--bg);
+    background-color: var(--primary);
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.background .ok:hover {
+    color: var(--primary);
+    background-color: var(--bg);
+    transition: 0.3s;
+}
+
+
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 80%; 
+    }
+}
+
+/* Tablet */
+@media (max-width: 800px) {
+    html {
+        font-size: 65%;
+    }
+
+    .contact #my-form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .contact .input,
+    .contact .submit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header {
+        margin: 5% 0 0 0;
+    }
+
+    .desc .location-button {
+        width: 20%;
+    }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+    html {
+        font-size: 60%;
+    }
+}

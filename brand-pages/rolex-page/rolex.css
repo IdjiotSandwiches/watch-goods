@@ -1,0 +1,237 @@
+:root {
+    --primary: #ff2c2c;
+    --secondary: rgb(20, 20, 20);
+    --bg: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--bg);
+    color: var(--secondary);
+}
+
+/* Product Section */
+.product-desc {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(15, 70, 45), rgb(26, 122, 77));
+}
+
+#rolex-logo {
+    margin: 1.4rem 7%;
+}
+
+.product-desc .bg-img {
+    min-height: 100vh;
+    background-image: url(../../../img/bg/rolex-aesthetic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.product-desc .bg-img::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.product-desc .bg-content {
+    padding: 2% 7%;
+    z-index: 1;
+}
+
+.bg-content {
+    opacity: 0;
+    animation: slideIn 2.5s forwards;
+    transform: translateY(-5%);
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.bg-content h1, 
+.bg-content p {
+    color: var(--bg);
+    text-align: center;
+}
+
+.bg-content h1 {
+    font-size: 2.5em;
+    font-weight: 800;
+}
+
+.bg-content #bottom {
+    background: linear-gradient(to right, rgb(15, 70, 45), rgb(26, 122, 77));
+    margin: 0 30%;
+    padding: 1% 0;
+}
+
+.bg-content p {
+    padding: 1% 10%;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+.product-desc .logo img {
+    width: 5%;
+}
+
+.product-section {
+    background: linear-gradient(to right, rgb(249, 247, 221), rgb(255,255,255));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.rolex-product .product {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 10% 0;
+    color: rgb(24, 111, 71);
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.rolex-product .product:hover {
+    color: var(--primary);
+}
+
+.rolex-product .img, 
+.rolex-product h4, 
+.rolex-product p,
+.rolex-product h5 {
+    padding: 1% 0;
+}
+
+.rolex-product h4 {
+    font-size: 2rem;
+}
+
+.rolex-product p {
+    font-size: 1.2rem;
+}
+
+.rolex-product #find-more {
+    font-size: 1.1rem;
+}
+
+.yacht-desc .arrow {
+    display: flex;
+    align-items: center;
+}
+
+.yacht-desc #right-arrow {
+    margin: 0.5% 0 0 5%;
+}
+
+.rolex-product .yacht-desc {
+    width: 40%;
+}
+
+.rolex-product img {
+    width: 85%;
+}
+
+
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 80%; 
+    }
+}
+
+/* Tablet */
+@media (max-width: 800px) {
+    html {
+        font-size: 65%;
+    }
+
+    #rolex-logo {
+        margin: 5% 7% 1.4rem 7%;
+    }
+    
+    .rolex-product .product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10% 0;
+    }
+
+    .bg-content #bottom {
+        margin: 0 20%;
+    }
+    
+    .rolex-product img {
+        width: 70%;
+    }
+
+    .rolex-product h4, 
+    .rolex-product p {
+        text-align: center;
+    }
+
+    .yacht-desc .arrow {
+        display: flex;
+        justify-content: center;
+    }
+
+    .rolex-product .img {
+        display: flex;
+        justify-content: center;
+        padding: 3% 0;
+    }
+
+    .rolex-product .yacht-desc {
+        width: 80%;
+    }
+
+    .yacht-desc #right-arrow {
+        margin: 0.5% 0 0 1%;
+    }
+
+    .product-desc {
+        margin: 5% 0 0 0;
+    }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+    html {
+        font-size: 60%;
+    }
+}
